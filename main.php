@@ -31,7 +31,7 @@
 				<div class="page-content">
 					<!-- /section:settings.box -->
 					<div class="page-header">
-						<h1 style="text-align: center;margin-left: 150px;">
+						<h1 style="text-align: center;">
 							7班打卡管理
 							<label>
 								<h5 style="width: 90px;margin-right: 10px;">
