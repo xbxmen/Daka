@@ -20,7 +20,7 @@
 		<script src="assets/js/jquery.js"></script>
 		<script src="js/daka.js" ></script>
 
-		<?php if(!isset($_COOKIE['user'])){echo "<script type='text/javascript'>alert('登录状态超时,请重新登录');window.location.href='login.php'</script>";}?>
+		<?php if(!isset($_COOKIE['user'])){echo "<script type='text/javascript'>alert('登录状态超时,请重新登录');window.location.href='index.php'</script>";}?>
 	</head>
 
 	<body class="no-skin">

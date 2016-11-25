@@ -34,7 +34,7 @@ function daka() {
 			}else if(data == -2){
 				alert("再去完成一个任务再来打卡吧～～");
 			}else{
-				window.location.href = "login.php"
+				window.location.href = "index.php"
 			}
 		},
 		error:function (data) {
