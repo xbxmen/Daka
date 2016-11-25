@@ -1,0 +1,85 @@
+.lg_main {
+	margin:0 auto;
+	margin-top: 100px;
+	width: 400px;
+	height: 180px;
+}
+.ur {
+	height: 36px;
+	border: 0;
+	color: #666;
+	width: 233px;
+	margin: 4px 28px;
+	background: url(../img/user.png) no-repeat;
+	padding-left: 10px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.pw {
+	height: 36px;
+	border: 0;
+	color: #666;
+	width: 233px;
+	margin: 4px 28px;
+	background: url(../img/password.png) no-repeat;
+	padding-left: 10px;
+	font-size: 12px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.ip {
+	height: 36px;
+	border: 0;
+	color: #666;
+	width: 231px;
+	margin: 4px 28px;
+	background: url(../img/ip.png) no-repeat;
+	padding-left: 10px;
+	font-size: 12px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+.bn {
+	margin: auto;
+	margin-top: 20px;
+	width: 200px;
+	height: 35px;
+	border: 0;
+	display: block;
+	font-size: 18px;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+}
+.foot {
+	top: 100px;
+}
+
+#topic {
+	margin: 0 auto;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 25px;
+}
+
+#logMess {
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+#blog {
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 13px;
+}
+
+#blog a{
+	text-decoration: none;
+}
+
+#blog a:hover{
+	text-decoration: blink;
+}

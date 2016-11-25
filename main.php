@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta charset="utf-8" />
 		<title>Empty Page - Ace Admin</title>
-
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
@@ -207,7 +207,7 @@
 				<!-- /.page-content -->
 				<div style="margin: 0 auto;width: 7%;">
 					<button class="btn btn-sm btn-primary btn-white btn-round"
-						style="width: 110	px;height: 35px" onclick="daka()" type="button">
+						style="width: 110px;height: 35px" onclick="daka()" type="button">
 					打卡
 					<i class="ace-icon fa fa-arrow-right icon-on-right bigger-110"></i>
 					</button>
