@@ -205,7 +205,7 @@
 					</div><!-- /.row -->
 				</div>
 				<!-- /.page-content -->
-				<div style="margin: 0 auto;width: 7%;">
+				<div style="text-align: center">
 					<button class="btn btn-sm btn-primary btn-white btn-round"
 						style="width: 110px;height: 35px" onclick="daka()" type="button">
 					打卡
