@@ -2,7 +2,7 @@
 <html xmlns="http://zhaoshuai.me">
 <head>
     <meta charset="utf-8" />
-    <title>SDU WL</title>
+    <title>打卡系统</title>
     <base target="_blank" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
