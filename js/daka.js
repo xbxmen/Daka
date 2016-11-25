@@ -31,6 +31,7 @@ function daka() {
 			console.log(data);
 			if(data == 1 ){
 				alert("打卡成功～～");
+				window.location.href = "main.php";
 			}else if(data == -2){
 				alert("再去完成一个任务再来打卡吧～～");
 			}else{
