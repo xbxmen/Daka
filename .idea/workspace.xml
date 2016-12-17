@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e23c4ff-d0e3-4e82-b9e7-25a13af25a9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/201400301203.txt" afterPath="$PROJECT_DIR$/logs/201400301203.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/daka.php" afterPath="$PROJECT_DIR$/config/daka.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/daka.js" afterPath="$PROJECT_DIR$/js/daka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/201400301103.txt" afterPath="$PROJECT_DIR$/logs/201400301103.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/logs.txt" afterPath="$PROJECT_DIR$/logs/logs.txt" />
     </list>
     <ignored path="Daka.iws" />
@@ -37,7 +37,7 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="342">
               <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
               <folding />
             </state>
@@ -47,7 +47,7 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
+            <state relative-caret-position="-468">
               <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding />
             </state>
@@ -64,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-24">
+            <state relative-caret-position="192">
               <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding />
             </state>
@@ -77,8 +77,8 @@
       <file leaf-file-name="daka.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/daka.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="-144">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -86,15 +86,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="daka.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="daka.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/daka.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="378">
+              <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding>
-                <marker date="1481951796644" expanded="true" signature="332:395" ph="SELECT * FRO... logs" />
-                <marker date="1481951796644" expanded="true" signature="468:881" ph="UPDATE logs " />
-                <marker date="1481951796644" expanded="true" signature="1089:1433" ph="INSERT INTO logs... " />
+                <marker date="1481978610118" expanded="true" signature="307:370" ph="SELECT * FRO... logs" />
+                <marker date="1481978610118" expanded="true" signature="443:856" ph="UPDATE logs " />
+                <marker date="1481978610118" expanded="true" signature="1064:1120" ph="INSERT INTO logs... " />
+                <marker date="1481978610118" expanded="true" signature="1064:1374" ph="INSERT INTO logs... " />
               </folding>
             </state>
           </provider>
@@ -140,13 +141,13 @@
         <option value="$PROJECT_DIR$/config/myDB.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/js/login.js" />
-        <option value="$PROJECT_DIR$/config/daka.php" />
         <option value="$PROJECT_DIR$/config/getDaka.php" />
         <option value="$PROJECT_DIR$/config/login.php" />
-        <option value="$PROJECT_DIR$/js/daka.js" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/js/daka.js" />
+        <option value="$PROJECT_DIR$/config/daka.php" />
       </list>
     </option>
   </component>
@@ -190,20 +191,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Daka" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daka" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daka" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,12 +314,12 @@
       <workItem from="1480095965133" duration="484000" />
       <workItem from="1480096768655" duration="14627000" />
       <workItem from="1481871839007" duration="1344000" />
-      <workItem from="1481897979002" duration="17933000" />
+      <workItem from="1481897979002" duration="20411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34388000" />
+    <option name="totallyTimeSpent" value="36866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,7 +334,7 @@
     <frame x="51" y="24" width="1315" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18707225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1878327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,48 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/daka.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/daka.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <marker date="1481951796644" expanded="true" signature="332:395" ph="SELECT * FRO... logs" />
-            <marker date="1481951796644" expanded="true" signature="468:881" ph="UPDATE logs " />
-            <marker date="1481951796644" expanded="true" signature="1089:1433" ph="INSERT INTO logs... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/curl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -560,11 +509,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="4" column="12" lean-forward="false" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="40" column="67" lean-forward="true" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
+        <state relative-caret-position="192">
           <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/daka.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/daka.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <marker date="1481978610118" expanded="true" signature="307:370" ph="SELECT * FRO... logs" />
+            <marker date="1481978610118" expanded="true" signature="443:856" ph="UPDATE logs " />
+            <marker date="1481978610118" expanded="true" signature="1064:1120" ph="INSERT INTO logs... " />
+            <marker date="1481978610118" expanded="true" signature="1064:1374" ph="INSERT INTO logs... " />
+          </folding>
         </state>
       </provider>
     </entry>

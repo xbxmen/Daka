@@ -27,6 +27,8 @@ function daka() {
 			arr[obj[i].value] = 1;
 		}
 	}
+
+	console.log(arr);
 	if(kong){
 		alert("至少要完成一个任务呦～～");
 		return false;
@@ -36,7 +38,6 @@ function daka() {
 		type:"post",
 		data:arr,
 		success:function (data) {
-			console.log(data);
 			if(data == 1 ){
 				alert("打卡成功～～");
 				getDaka();
@@ -57,7 +58,6 @@ function daka() {
 * */
 
 function getDaka() {
-    console.log($("#myDate").val());
     var time = $("#myDate").val();
     $.ajax({
         url:"./config/getDaka.php",

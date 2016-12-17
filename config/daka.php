@@ -7,7 +7,7 @@ error_reporting();
 $response = array("statue" => '');
 $con = new opDB();
 date_default_timezone_set("Asia/Shanghai");
-if(isset($_COOKIE['user']) && isset($_POST['time'])){
+if(isset($_COOKIE['user'])){
     $time = $_POST['time'];
     $account = $_COOKIE['user'];
     $username = $_COOKIE['username'];
@@ -27,9 +27,7 @@ if(isset($_COOKIE['user']) && isset($_POST['time'])){
             exit;
         }
     }else{
-        $sql ="INSERT INTO logs VALUES('$account','$username','$time','{$_POST['一１']}','{$_POST['一2']}','{$_POST['一3']}','{$_POST['一4']}'
-                ,'{$_POST['一5']}','{$_POST['一6']}','{$_POST['一7']}','{$_POST['二１']}','{$_POST['二2']}'
-                ,'{$_POST['二3']}','{$_POST['二4']}','{$_POST['二5']}','{$_POST['三１']}','{$_POST['三２']}','{$_POST['三３']}')";
+        $sql ="INSERT INTO logs VALUES('$account','$username','$time','{$_POST['一1']}','{$_POST['一2']}','{$_POST['一3']}','{$_POST['一4']}','{$_POST['一5']}','{$_POST['一6']}','{$_POST['一7']}','{$_POST['二1']}','{$_POST['二2']}','{$_POST['二3']}','{$_POST['二4']}','{$_POST['二5']}','{$_POST['三1']}','{$_POST['三2']}','{$_POST['三3']}')";
         echo $con->excute_dml($sql);
         exit;
     }
