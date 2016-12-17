@@ -19,12 +19,17 @@ function daka() {
 	arr['三3'] = "";
 	arr['time'] = $("#myDate").val();
 
-	console.log(arr);
+	var kong = true;
 	var obj = document.getElementsByName("choice");
 	for(var i = 0;i < obj.length;i++){
 		if(obj[i].checked){
+			kong = false;
 			arr[obj[i].value] = 1;
 		}
+	}
+	if(kong){
+		alert("至少要完成一个任务呦～～");
+		return false;
 	}
 	$.ajax({
 		url:"./config/daka.php",
