@@ -1,3 +1,5 @@
+/*
+* 打卡功能*/
 function daka() {
 	var arr = {};
 	arr['一1'] = "";
@@ -15,6 +17,7 @@ function daka() {
 	arr['三1'] = "";
 	arr['三2'] = "";
 	arr['三3'] = "";
+	arr['time'] = $("#myDate").val();
 
 	console.log(arr);
 	var obj = document.getElementsByName("choice");
@@ -31,10 +34,10 @@ function daka() {
 			console.log(data);
 			if(data == 1 ){
 				alert("打卡成功～～");
-				window.location.href = "main.php";
+				getDaka();
 			}else if(data == -2){
 				alert("再去完成一个任务再来打卡吧～～");
-			}else{
+			}else if(data == -1){
 				window.location.href = "index.php"
 			}
 		},
@@ -42,4 +45,63 @@ function daka() {
 			console.log(data);
 		}
 	});
+}
+
+/*
+* 显示打卡情况
+* */
+
+function getDaka() {
+    console.log($("#myDate").val());
+    var time = $("#myDate").val();
+    $.ajax({
+        url:"./config/getDaka.php",
+        type:"post",
+        data:{'time':time},
+		dataType:"json",
+        success:function (data) {
+        	clear();
+            var obj = document.getElementsByName("choice");
+        	console.log(data);
+        	if(data['statue'] != -3){
+                var index = 0;
+                for(var i = 1;i<=7;i++){
+                    var str = "一"+i;
+                    if(data[str] != ""){
+                        obj[index].checked = true;
+                    }
+                    index++;
+                }
+                for(var i = 1;i<=5;i++){
+                    var str = "二"+i;
+                    if(data[str] != ""){
+                        obj[index].checked = true;
+                    }
+                    index++;
+                }
+                for(var i = 1;i<=3;i++){
+                    var str = "三"+i;
+                    if(data[str] != ""){
+                        obj[index].checked = true;
+                    }
+                    index++;
+                }
+			}else if(data == -3){
+                for(var i = 0;i < obj.length;i++){
+                    obj[i].checked = false;
+                }
+			}
+        },
+        error:function (data) {
+            console.log(data);
+        }
+    });
+}
+getDaka();
+
+function clear() {
+    var obj = document.getElementsByName("choice");
+    for(var i = 0;i < obj.length;i++){
+        obj[i].checked = false;
+    }
 }

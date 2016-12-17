@@ -17,15 +17,11 @@
 		<!-- ace styles -->
 		<link rel="stylesheet" href="assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
 		<!--js 文件 -->
-		<script src="assets/js/jquery.js"></script>
-		<script src="js/daka.js" ></script>
-
 		<?php if(!isset($_COOKIE['user'])){echo "<script type='text/javascript'>alert('登录状态超时,请重新登录');window.location.href='index.php'</script>";}?>
 	</head>
 
 	<body class="no-skin">
 		<div class="main-container" id="main-container">
-
 			<div class="main-content">
 				<!-- #section:basics/content.breadcrumbs -->
 				<div class="page-content">
@@ -33,13 +29,37 @@
 					<div class="page-header">
 						<h1 style="text-align: center;">
 							7班打卡管理
-							<label>
+                            <br>
+							<label style="margin-top: 10px;">
 								<h5 style="width: 90px;margin-right: 10px;">
-									<?php echo date("Y-m-d")?>
+                                    <select id="myDate" onchange="getDaka()">
+                                        <option selected="true">2016-12-17</option>
+                                        <option>2016-12-16</option>
+                                        <option>2016-12-15</option>
+                                        <option>2016-12-14</option>
+                                        <option>2016-12-12</option>
+                                        <option>2016-12-11</option>
+                                        <option>2016-12-10</option>
+                                        <option>2016-12-09</option>
+                                        <option>2016-12-08</option>
+                                        <option>2016-12-07</option>
+                                        <option>2016-12-06</option>
+                                        <option>2016-12-05</option>
+                                        <option>2016-12-04</option>
+                                        <option>2016-12-03</option>
+                                        <option>2016-12-02</option>
+                                        <option>2016-12-01</option>
+                                        <option>2016-11-30</option>
+                                        <option>2016-11-29</option>
+                                        <option>2016-11-28</option>
+                                        <option>2016-11-27</option>
+                                        <option>2016-11-26</option>
+                                    </select>
 								</h5>
-							</label>
+                            </label>
+                            <br>
 							<label class="" style="width: 60px;">
-								<h5 style="margin: 0 auto;">
+								<h5 style="margin: 0 auto;" id="username">
 									<?php echo $_COOKIE['username'];?>
 								</h5>
 							</label>
@@ -216,5 +236,7 @@
 			<!-- /.main-content -->
 		</div>
 		<!-- /.main-container -->
-	</body>
+        <script src="assets/js/jquery.js"></script>
+        <script src="js/daka.js" ></script>
+    </body>
 </html>

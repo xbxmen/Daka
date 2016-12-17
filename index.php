@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>打卡系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <base target="_blank" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>

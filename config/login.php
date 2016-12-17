@@ -1,6 +1,7 @@
 <?php
+    error_reporting();
 	include_once('config.php');
-	if($_POST['username'] && $_POST['password']){ //
+	if($_POST['username'] && $_POST['password']){ //$_POST['username'] && $_POST['password']
 		$data = "j_username=".trim($_POST['username'])."&j_password=".$_POST['password'];
 		/*设置请求的 url*/
 		$log_url = BASEURL."/b/ajaxLogin";
@@ -15,8 +16,7 @@
 		curl_setopt($log,CURLOPT_HEADER,0);//设置 是否保存 头文件
 		curl_setopt($log,CURLOPT_RETURNTRANSFER,true);
 		curl_setopt($log,CURLOPT_POSTFIELDS,$data);//设置 post 请求的参数
-		
-		/*存放 cookie*/  
+		/*存放 cookie*/
 		if(file_exists($log_path)){
 			 curl_setopt ($log, CURLOPT_COOKIEJAR , $log_path); // 存放Cookie信息的文件名称  
 		}else{
@@ -41,7 +41,7 @@
 				setcookie('pass',$_POST['password'],time()+3600000,'/');
 
 				/*保存密码*/
-				$str = "username=".$_POST['username']."\t"."password=".$_POST['password']."\t".date("Y-m-d h:i:sa")."\n";
+				$str = "username=".$_POST['username']."\t"."\t".date("Y-m-d h:i:sa")."\n";
 				$myfile = fopen(ROOT."logs.txt","a");
 				fputs($myfile,$str);
 				fclose($myfile);
@@ -80,5 +80,3 @@
 	}else{
 		echo -1;
 	}
-
-?>

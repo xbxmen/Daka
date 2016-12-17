@@ -1,14 +1,14 @@
 <?php
 /*
- *   	宾馆管理系统  职工添加的接口
+ * 打卡 接口
  * */
 include_once 'myDB.php';
 error_reporting();
 $response = array("statue" => '');
 $con = new opDB();
 date_default_timezone_set("Asia/Shanghai");
-if(isset($_COOKIE['user'])){
-    $time = date("Y-m-d");
+if(isset($_COOKIE['user']) && isset($_POST['time'])){
+    $time = $_POST['time'];
     $account = $_COOKIE['user'];
     $username = $_COOKIE['username'];
     $sql  = "SELECT * FROM logs WHERE Account='{$account}' && Time='{$time}'";
@@ -30,7 +30,6 @@ if(isset($_COOKIE['user'])){
         $sql ="INSERT INTO logs VALUES('$account','$username','$time','{$_POST['一１']}','{$_POST['一2']}','{$_POST['一3']}','{$_POST['一4']}'
                 ,'{$_POST['一5']}','{$_POST['一6']}','{$_POST['一7']}','{$_POST['二１']}','{$_POST['二2']}'
                 ,'{$_POST['二3']}','{$_POST['二4']}','{$_POST['二5']}','{$_POST['三１']}','{$_POST['三２']}','{$_POST['三３']}')";
-        echo $sql;
         echo $con->excute_dml($sql);
         exit;
     }
