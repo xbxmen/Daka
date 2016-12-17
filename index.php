@@ -11,7 +11,7 @@
     <script src="js/login.js" type="text/javascript" ></script>
 </head>
 <body>
-<div id="topic" style="margin-top: 100px;">
+<div id="topic">
     7班诚信状打卡系统
 </div>
 <div class="lg_main" style="text-align: center;margin-top: 50px">
